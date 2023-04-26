@@ -10,6 +10,8 @@
 #include "linux/uaccess.h"
 #include "linux/version.h"
 #include "linux/workqueue.h"
+#include "linux/input.h"
+#include "linux/ksu.h"
 
 #include "allowlist.h"
 #include "arch.h"
@@ -354,6 +356,12 @@ bool ksu_is_safe_mode()
 	static bool safe_mode = false;
 	if (safe_mode) {
 		// don't need to check again, userspace may call multiple times
+		return true;
+	}
+
+    if (get_ksu_safe_mode_state() > 0) {
+		pr_info("kernelsu.safemode is set to 1 in cmdline, safe mode enabled!\n");
+		safe_mode = true;
 		return true;
 	}
 
