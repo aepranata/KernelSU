@@ -70,6 +70,14 @@ jobs:
       CCACHE_NOHASHDIR: "true"
       CCACHE_HARDLINK: "true"
     steps:
+      - name: Maximize build space
+        uses: easimon/maximize-build-space@master
+        with:
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
+          remove-codeql: 'true'
+
       - uses: actions/checkout@v3
         with:
           path: KernelSU
@@ -104,7 +112,6 @@ jobs:
           if [ -d prebuilts/clang/host/linux-x86 ] && [ -f common/build.config.constants ]; then
             ls -d prebuilts/clang/host/linux-x86/clang-r* | grep -v $(sed -n 's/^CLANG_VERSION=//p' common/build.config.constants)
           fi
-          rm -rf .repo
           df -h
 
       - name: Setup KernelSU
