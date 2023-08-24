@@ -1,9 +1,9 @@
 
-**English** | [Español](README_ES.md) | [简体中文](README_CN.md) | [繁體中文](README_TW.md) | [日本語](README_JP.md) | [Polski](README_PL.md) | [Portuguese-Brazil](README_PT-BR.md) | [Türkçe](README_TR.md) | [Русский](README_RU.md)
+**English** | [Español](README_ES.md) | [简体中文](README_CN.md) | [繁體中文](README_TW.md) | [日本語](README_JP.md) | [Polski](README_PL.md) | [Portuguese-Brazil](README_PT-BR.md) | [Türkçe](README_TR.md) | [Русский](README_RU.md) | [Tiếng Việt](README_VI.md)
 
 # KernelSU
 
-A Kernel based root solution for Android devices.
+A Kernel-based root solution for Android devices.
 
 ## Features
 
@@ -13,11 +13,11 @@ A Kernel based root solution for Android devices.
 
 ## Compatibility State
 
-KernelSU officially supports Android GKI 2.0 devices(with kernel 5.10+), old kernels(4.14+) is also compatible, but you need to build kernel yourself.
+KernelSU officially supports Android GKI 2.0 devices(with kernel 5.10+), old kernels(4.14+) are also compatible, but you need to build the kernel yourself.
 
-WSA, ChromeOS and containter-based Android can also work with KernelSU integrated.
+WSA, ChromeOS and container-based Android can also work with KernelSU integrated.
 
-And the current supported ABIs are : `arm64-v8a` and `x86_64`
+And the current supported ABIs are: `arm64-v8a` and `x86_64`
 
 ## Usage
 
@@ -27,7 +27,7 @@ And the current supported ABIs are : `arm64-v8a` and `x86_64`
 
 ## Translation
 
-To translate KernelSU into your language, or to improve an existing translation, use [Weblate](https://hosted.weblate.org/engage/kernelsu/) please.
+To translate KernelSU into your language or improve an existing translation, please use [Weblate](https://hosted.weblate.org/engage/kernelsu/).
 
 ### Discussion
 
@@ -35,8 +35,8 @@ To translate KernelSU into your language, or to improve an existing translation,
 
 ## License
 
-- Files under `kernel` directory are [GPL-2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-- All other parts except `kernel` directory are [GPL-3](https://www.gnu.org/licenses/gpl-3.0.html)
+- Files under the `kernel` directory are [GPL-2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+- All other parts except the `kernel` directory are [GPL-3](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ## Credits
 
