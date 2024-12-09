@@ -1,17 +1,15 @@
 use anyhow::{bail, Context, Error, Ok, Result};
 use std::{
-    fs::{self, create_dir_all, remove_file, write, File, OpenOptions},
+    fs::{create_dir_all, remove_file, write, File, OpenOptions},
     io::{
         ErrorKind::{AlreadyExists, NotFound},
         Write,
     },
     path::Path,
     process::Command,
-    sync::OnceLock,
 };
 
 use crate::{assets, boot_patch, defs, ksucalls, module, restorecon};
-use std::fs::metadata;
 #[allow(unused_imports)]
 use std::fs::{set_permissions, Permissions};
 #[cfg(unix)]
